@@ -1,0 +1,146 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#navbar1 {
+	height: 50px;
+	background-color: #050414;
+	font-size: 10px;
+	font-size: larger;
+	text-decoration: none;
+	display: flex;
+	text-align: right;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 40px;
+}
+
+#ViewPlan {
+	border: none;
+	border-radius: 4.8px;
+	background: linear-gradient(90deg, #8c1a17, #cd122d);
+	height: 42px;
+	margin-right: 12px;
+	padding: 0 38.4px;
+	color: white;
+	font-size: large;
+}
+
+a {
+	margin-right: 30px;
+	text-decoration: none;
+	color: white;
+}
+
+#navbar2 {
+	background-color: #0d0c1d;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-right: 20px;
+	/* Adjust to provide space for the search input and button */
+}
+
+.search-container {
+	display: flex;
+	align-items: center;
+	margin-right: 80px;
+	/* Adjust to provide space between "Transfers" and search */
+}
+
+.search-container input[type="text"], .search-container button {
+	background-color: #0d0c1d;
+	/* Apply the same background color as the navbar */
+	border: none;
+	color: white; /* Adjust text color for better visibility */
+}
+
+.search-container input[type="text"] {
+	padding: 6px;
+	margin-right: 5px; /* Adjust spacing between input field and button */
+}
+
+.search-container button {
+	padding: 6px 10px;
+	cursor: pointer;
+}
+
+/* Styles for the main content */
+main {
+	padding: 20px;
+	min-height: 67vh;
+	/* Ensure main content stretches to at least the height of the viewport */
+}
+
+/* Styles for the create player section */
+.create-player {
+	margin-bottom: 30px;
+}
+
+.create-player h2 {
+	margin-bottom: 10px;
+}
+
+.create-player input[type="text"] {
+	margin-right: 10px;
+	padding: 8px;
+	width: 200px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.create-player button[type="submit"] {
+	padding: 8px 16px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.create-player button[type="submit"]:hover {
+	background-color: #0056b3;
+}
+
+/* Styles for the player list section */
+.player-list table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.player-list th, .player-list td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+}
+
+.player-list th {
+	background-color: #f2f2f2;
+}
+
+.player-list tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.player-list tr:hover {
+	background-color: #ddd;
+}
+
+.player-list td a {
+	color: #007bff;
+	margin-right: 5px;
+	text-decoration: none;
+}
+
+.player-list td a:hover {
+	text-decoration: underline;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+	margin: 0px;
+}

@@ -1,0 +1,140 @@
+body {
+    margin: 0; 
+    padding: 0; 
+     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#navbar1 {
+    height: 50px;
+    background-color: #050414;
+    font-size: 10px;
+    font-size: larger;
+    text-decoration: none;
+    display: flex; 
+    text-align: right;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+}
+.player-box {
+    color: white;
+    border-radius: 10px; /* Manage border radius */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(20% - 20px); /* Adjust width to fit three boxes per row with spacing */
+    transition: all 0.3s ease;
+    cursor: pointer; /* Add cursor pointer */
+}
+.player-box:nth-child(odd) {
+    background-color: #ff6666; /* Red background color */
+}
+
+/* Background color for even player boxes */
+.player-box:nth-child(even) {
+    background-color: #6666ff; /* Blue background color */
+}
+/* Hover effect for player box */
+.player-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjustments to player container */
+.player-container {
+    display: flex;
+    flex-wrap: wrap;
+justify-content: space-evenly;
+    margin-top: 20px; /* Add margin to separate player container from other elements */
+}
+#ViewPlan {
+    border: none;
+    border-radius: 4.8px; 
+    background: linear-gradient(90deg, #8c1a17, #cd122d);
+    height: 42px; 
+    margin-right: 12px; 
+    padding: 0 38.4px; 
+    color: white;
+    font-size: large;
+}
+
+a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+#navbar2 {
+    background-color: #0d0c1d;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 20px; /* Adjust to provide space for the search input and button */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 80px; /* Adjust to provide space between "Transfers" and search */
+}
+
+.search-container input[type="text"],
+.search-container button {
+    background-color: #0d0c1d; /* Apply the same background color as the navbar */
+    border: none;
+    color: white; /* Adjust text color for better visibility */
+}
+
+.search-container input[type="text"] {
+    padding: 6px;
+    margin-right: 5px; /* Adjust spacing between input field and button */
+}
+
+.search-container button {
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+main {
+   flex-grow: 1; 
+    padding: 20px;
+background-image: url('<%=contextPath%>/resources/bg-image.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.news {
+    border-top: 2px solid #a50044;
+    padding-top: 20px;
+}
+
+.news h2 {
+    color: #a50044;
+}
+
+.article {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 50%;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Push footer to the bottom of the screen */
+}

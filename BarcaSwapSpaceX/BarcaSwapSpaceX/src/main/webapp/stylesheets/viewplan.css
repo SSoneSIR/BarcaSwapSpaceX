@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles for the header */
+#navbar1 {
+    height: 50px;
+    background-color: #050414;
+    font-size: 10px;
+    font-size: larger;
+    text-decoration: none;
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#navbar2 {
+    background-color: #0d0c1d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px; /* Adjust to provide space for the search input and button */
+    margin-bottom:-26px; /* Added margin bottom */
+}
+
+#navbar1 a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+#BarcaLogo img {
+    width: 100px;
+    height: 100px;
+}
+
+main {
+    padding: 0px; /* Added padding to main */
+}
+
+/* Styles for the plan options */
+.plan-options {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Center the options */
+}
+
+.option {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 300px; /* Adjust the height as needed */
+}
+#topic {
+    color: #fdc52c;
+    font-size: 2rem; /* Adjusted font size */
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.option h2 {
+    color: #050414;
+    font-size: 1.5rem; /* Adjusted font size */
+    margin-bottom: 10px; /* Added margin bottom */
+}
+
+.option p {
+    color: #666;
+        margin-bottom: 15px; /* Added margin bottom for consistency */
+    
+}
+
+.option a {
+    display: inline-block;
+    background-color: #050414;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.option a:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0px;
+}
+
+/* Background image */
+#bg {
+    background-image: url('../resources/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 120vh;
+    position: relative; /* Required for absolute positioning */
+}
